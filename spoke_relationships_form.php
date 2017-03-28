@@ -54,6 +54,7 @@ $itemtypes = $db->fetchAll($sql);
 $idOf = array();
 $nameOf = array(
     '-1' => 'All',
+    null => 'All',
 );
 foreach ($itemtypes as $type) {
     $nameOf[$type['id']] = $type['name'];
